@@ -1,5 +1,14 @@
 <?php
 
+/**
+ *  busiq-darkTheme functions and definitions
+ * 
+ *  @package BUSIQ
+ *  @subpackage darkTheme
+ *  @since 1.0
+ * 
+ */
+
 // Adding The CSS and JS Files
 function bq_theme_scripts() {
 
