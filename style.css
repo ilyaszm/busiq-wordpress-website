@@ -63,9 +63,7 @@ body {
     border: 1px solid var(--middleBlue)
 }
 
-#about-navbar,
-#contact-navbar,
-#service-navbar {
+#primary-navbar {
     background: #222
 }
 
@@ -316,6 +314,33 @@ footer li { transition: all .3s ease-in-out !important }
 footer li:hover { color: var(--paleBlue) !important }
 
 .bottom-footer { text-align: center !important }
+
+.menu-item {
+    display: inline-block
+}
+
+.footer-nav .container,
+.social-icons-nav .container {
+    padding: 0
+}
+
+.footer-menu,
+.social-icons-menu {
+    padding: 0
+}
+
+.footer-menu a.nav-link,
+.social-icons-menu a.nav-link {
+    padding: 0 1rem 0 0;
+    color: #888;
+    transition: all .3s ease-in-out !important
+}
+
+.footer-menu a.nav-link:hover,
+.social-icons-menu a.nav-link:hover {
+    padding: 0 1rem 0 0;
+    color: var(--paleBlue) !important
+}
 
 /*
     ABOUT PAGE STYLE

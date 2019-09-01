@@ -23,43 +23,50 @@
                 </div>
             </div>
             <div class="row py-5">
-                <div class="col-md-12 col-lg-6">
+                <div class="col-md-12 col-lg-8">
                     <i class="far fa-hand-scissors text-white"></i>
                     <p class="text-white-50">Hey what's up!!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt asperiores ex pariatur alias doloribus perspiciatis maxime inventore debitis voluptatibus! Ut facilis quidem sequi deserunt quos recusandae eius quo in earum atque quasi animi alias, magnam quisquam repellendus a nam cupiditate sapiente doloremque explicabo porro! Consequuntur ab repellat iste consectetur provident.</p>
                     <p class="text-white-50 float-right">&copy; <?php echo date('Y'); ?> - <?php bloginfo( 'name' ); ?></p>
                 </div>
-                <div class="col-md-12 col-lg-6">
-                    <h5 class="text-capitalize text-white">pages</h5>
-                    <ul class="list-inline text-capitalize">
-                        <a href="<?php echo site_url(''); ?>"><li class="list-inline-item pr-3 text-white-50">home</li></a>
-                        <a href="<?php echo site_url( '/about' ); ?>"><li class="list-inline-item pr-3 text-white-50">about us</li></a>
-                        <a href="<?php site_url( '/services' ); ?>"><li class="list-inline-item pr-3 text-white-50">services</li></a>
-                        <a href="<?php site_url( '/contact' ); ?>"><li class="list-inline-item pr-3 text-white-50">contact</li></a>
-                        <a href="<?php site_url( '/blog' ); ?>"><li class="list-inline-item pr-3 text-white-50">blog</li></a>
-                    </ul>
-                    <h5 class="text-capitalize text-white">social medias</h5>
-                    <ul class="list-inline text-capitalize">
-                        <a href="#">
-                            <li class="list-inline-item pr-3 text-white-50">
-                                <i class="fab fa-facebook"></i>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-inline-item pr-3 text-white-50">
-                                <i class="fab fa-twitter"></i>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-inline-item pr-3 text-white-50">
-                                <i class="fas fa-envelope"></i>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="list-inline-item pr-3 text-white-50">
-                                <i class="fab fa-youtube"></i>
-                            </li>
-                        </a>
-                    </ul>
+                <div class="col-md-12 col-lg-4">
+                    <h5 class="text-capitalize text-white">links</h5>
+                    <nav class="footer-nav">
+                        <div class="container">
+                            <?php
+                            wp_nav_menu ( array(
+                                'menu'            => 'footer_menu',
+                                'theme_location'  => 'footer_menu',
+                                'container'       => 'div',
+                                'container_id'    => 'bs4navbar',
+                                'container_class' => '',
+                                'menu_id'         => false,
+                                'menu_class'      => 'footer-menu',
+                                'depth'           => 2,
+                                'fallback_cb'     => 'bs4navwalker::fallback',
+                                'walker'          => new bs4navwalker()
+                            ));
+                            ?>
+                        </div>
+                    </nav>
+                    <h5 class="text-capitalize text-white">reach us</h5>
+                    <nav class="social-icons-nav">
+                        <div class="container">
+                            <?php
+                            wp_nav_menu ( array(
+                                'menu'            => 'social_icons_menu',
+                                'theme_location'  => 'social_icons_menu',
+                                'container'       => 'div',
+                                'container_id'    => 'bs4navbar',
+                                'container_class' => '',
+                                'menu_id'         => false,
+                                'menu_class'      => 'social-icons-menu',
+                                'depth'           => 2,
+                                'fallback_cb'     => 'bs4navwalker::fallback',
+                                'walker'          => new bs4navwalker()
+                            ));
+                            ?>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>

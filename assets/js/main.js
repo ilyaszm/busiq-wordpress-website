@@ -1,7 +1,5 @@
 jQuery(document).ready(function() {
 
-    console.log('hhhhhhhhhhhhhhhhhhh')
-
     // SLIDESHOW SCRIPT
     var $prev = jQuery('.previous');
     var $next = jQuery('.next');

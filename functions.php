@@ -5,6 +5,9 @@
  * 
  */
 
+// Register Nav Walker class
+require_once('bs4navwalker.php');
+
 // Adding The CSS and JS Files
 function bq_theme_scripts() {
 
@@ -49,6 +52,13 @@ function bq_init() {
     // html5 markup for search forms, comment forms and comment lists
     $html_args = array('search-form', 'comment-form', 'comment-list' );
     add_theme_support( 'html5', $html_args );
+
+    // Nav Menus
+    register_nav_menus( array(
+        'primary_menu'      => __('Primary Menu', 'text_domain'),
+        'footer_menu'       => __('Footer Menu', 'text_domain'),
+        'social_icons_menu' => __('Social Icons Menu', 'text_domain')
+    ) );
 }
 add_action( 'after_setup_theme', 'bq_init' );
 

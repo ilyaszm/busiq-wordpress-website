@@ -17,31 +17,26 @@
 <body>
     
     <!-- NAVBAR -->
-    <nav id="about-navbar" class="navbar navbar-expand-lg navbar-dark">
+    <nav id="primary-navbar" class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">busiq</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><?php bloginfo( 'name' ); ?></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo site_url(''); ?>">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo site_url( '/about' ); ?>">about us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php site_url( '/services' ); ?>">services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php site_url( '/contact' ); ?>">contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php site_url( '/blog' ); ?>">blog</a>
-                    </li>
-                </ul>
-            </div>
+            <?php
+            wp_nav_menu ( array(
+                'menu'            => 'primary_menu',
+                'theme_location'  => 'primary_menu',
+                'container'       => 'div',
+                'container_id'    => 'bs4navbar',
+                'container_class' => 'collapse navbar-collapse',
+                'menu_id'         => false,
+                'menu_class'      => 'navbar-nav ml-auto',
+                'depth'           => 2,
+                'fallback_cb'     => 'bs4navwalker::fallback',
+                'walker'          => new bs4navwalker()
+            ));
+            ?>
         </div>
     </nav>
