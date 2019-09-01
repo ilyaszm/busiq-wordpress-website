@@ -1,0 +1,22 @@
+{
+  "name": "darktheme",
+  "version": "1.0.0",
+  "description": "Business WordPress Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyaszm/busiq-wordpress-website.git"
+  },
+  "author": "IZEMSPOT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilyaszm/busiq-wordpress-website/issues"
+  },
+  "homepage": "https://github.com/ilyaszm/busiq-wordpress-website#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

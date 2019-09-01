@@ -8,7 +8,7 @@ if ( have_posts() ) {
 
         ?><h3><?php the_title(); ?></h3>
         <p>Posted by <?php the_author(); ?></p>
-        <img src="<?php echo get_the_post_thumbnail_url( get_the_ID() ); ?>" alt="image post">
+        <img src="<?php echo get_the_post_thumbnail_url( get_the_ID() ); ?>" class="single-post-page-img" alt="image post">
         <?php
         the_content();
         comment_form();
