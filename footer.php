@@ -26,7 +26,7 @@
                 <div class="col-md-12 col-lg-8">
                     <i class="far fa-hand-scissors text-white"></i>
                     <p class="text-white-50">Hey what's up!!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt asperiores ex pariatur alias doloribus perspiciatis maxime inventore debitis voluptatibus! Ut facilis quidem sequi deserunt quos recusandae eius quo in earum atque quasi animi alias, magnam quisquam repellendus a nam cupiditate sapiente doloremque explicabo porro! Consequuntur ab repellat iste consectetur provident.</p>
-                    <p class="text-white-50 float-right">&copy; <?php echo date('Y'); ?> - <?php bloginfo( 'name' ); ?></p>
+                    <p class="text-white-50 float-right">&copy; <?php echo date('Y'); ?> - <b><?php bloginfo( 'name' ); ?></b></p>
                 </div>
                 <div class="col-md-12 col-lg-4">
                     <h5 class="text-capitalize text-white">links</h5>

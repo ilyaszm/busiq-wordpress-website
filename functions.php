@@ -5,8 +5,9 @@
  * 
  */
 
-// Register Nav Walker class
-require_once('bs4navwalker.php');
+// Import Files
+require_once( 'bs4navwalker.php' );   // Nav walker Class
+require get_template_directory() . '/inc/customizer.php';
 
 // Adding The CSS and JS Files
 function bq_theme_scripts() {
@@ -87,4 +88,3 @@ function bq_custom_post_type() {
 }
 add_action( 'init', 'bq_custom_post_type' );
 
-?>

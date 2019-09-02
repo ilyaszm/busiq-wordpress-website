@@ -17,7 +17,7 @@
 <body>
     
     <!-- NAVBAR -->
-    <nav id="primary-navbar" class="navbar navbar-expand-lg navbar-dark">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#"><?php bloginfo( 'name' ); ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">

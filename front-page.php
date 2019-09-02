@@ -57,7 +57,7 @@
             <div class="bg1">
                 <div class="slider-center">
                     <div class="slide-text text-center">
-                        <h2 class="slide-title">welcome to <?php bloginfo( 'name' ); ?></h2>
+                        <h2 class="slide-title">welcome to busiq</h2>
                         <p class="slide-para">An agency created specially for people who need to fix their car</p>
                     </div>
                 </div>
@@ -102,12 +102,12 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-8 picture">
-                    <img src="<?php wp_get_attachment_image_src( './assets/img/garage.jpg' ); ?>" alt="garage" class="img-fluid wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
+                    <img src="<?php bloginfo( 'template_url' ); ?> ./assets/img/garage.jpg" alt="garage" class="img-fluid wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <h4 class="text-white wow fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">The agency was born in 2012 in Torino.</h4>
                     <p class="text-white-50 wow fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati voluptate perspiciatis minus assumenda sed esse, mollitia, quas, impedit quisquam officia in tenetur? Deserunt repellendus alias dolores eum blanditiis! Facilis voluptatibus doloribus, quisquam asperiores quaerat dolor! Ratione dolores, minima provident qui ex est quaerat consectetur voluptas atque amet voluptate illo praesentium.</p>
-                    <a href="about.html" class="btn light-button text-capitalize font-weight-bold wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">read more...</a>
+                    <a href="about" class="btn light-button text-capitalize font-weight-bold wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">read more...</a>
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="services.html" class="btn light-button text-capitalize font-weight-bold mt-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".7s">check more...</a>
+                <a href="services" class="btn light-button text-capitalize font-weight-bold mt-3 wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".7s">check more...</a>
             </div>
         </div>
     </section>
@@ -177,7 +177,7 @@
             <div class="row">
                 <div class="card-group">
                     <div class="card m-3 rounded wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-                        <img src="assets/img/p1.jpg" class="card-img-top img-fluid" alt="p1">
+                        <img src="<?php bloginfo( 'template_url' ); ?> ./assets/img/p1.jpg" class="card-img-top img-fluid" alt="p1">
                         <div class="card-body">
                             <h5 class="card-title text-capitalize text-white">john doe</h5>
                             <p class="card-text text-capitalize text-white">founder / CEO</p>
@@ -193,7 +193,7 @@
                         </div>
                     </div>
                     <div class="card m-3 rounded wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">
-                        <img src="assets/img/p2.jpg" class="card-img-top img-fluid" alt="p2">
+                        <img src="<?php bloginfo( 'template_url' ); ?> ./assets/img/p2.jpg" class="card-img-top img-fluid" alt="p2">
                         <div class="card-body">
                             <h5 class="card-title text-capitalize text-white">jessie coleman</h5>
                             <p class="card-text text-capitalize text-white">business head</p>
@@ -209,7 +209,7 @@
                         </div>
                     </div>
                     <div class="card m-3 rounded wow fadeInUp" data-wow-duration="2s" data-wow-delay=".7s">
-                        <img src="assets/img/p3.jpg" class="card-img-top img-fluid" alt="p3">
+                        <img src="<?php bloginfo( 'template_url' ); ?> ./assets/img/p3.jpg" class="card-img-top img-fluid" alt="p3">
                         <div class="card-body">
                             <h5 class="card-title text-capitalize text-white">sarah kidman</h5>
                             <p class="card-text text-capitalize text-white">marketing manager</p>
@@ -238,7 +238,7 @@
                     If you have any answers or demands, please feel free to contact us. We're here to help and answer any question you might have.
                 </h3>
             </div>
-            <a href="contact.html" class="btn light-button text-capitalize font-weight-bold">reach us</a>
+            <a href="contact" class="btn light-button text-capitalize font-weight-bold">reach us</a>
         </div>
     </section>
 

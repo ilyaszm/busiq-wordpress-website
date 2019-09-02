@@ -2,10 +2,6 @@
 
 <!--
 
-    BUSIQ template by IZEMSPOT
-    izemspot.netlify.com
-    Free for personal and commercial use under the MIT License
-
     ABOUT PAGE
 
 -->
@@ -19,7 +15,7 @@
             </div>
             <div class="row mb-3">
                 <div class="col-12 p-0">
-                    <img src="./assets/img/we.jpg" alt="we" class="img-fluid wow fadeIn" data-wow-duration="2s" data-wow-delay=".4s">
+                    <img src="<?php bloginfo( 'template_url' ); ?> ./assets/img/we.jpg" alt="we" class="img-fluid wow fadeIn" data-wow-duration="2s" data-wow-delay=".4s">
                 </div>
             </div>
             <div class="row mb-3 bg-white wow slideInLeft" data-wow-duration="2s" data-wow-delay=".4s">
@@ -29,10 +25,10 @@
                 <div class="col-lg-4">
                     <div class="row">
                         <div class="col-12 p-0">
-                            <img src="./assets/img/hands.jpg" alt="" class="img-fluid">
+                            <img src="<?php bloginfo( 'template_url' ); ?> ./assets/img/hands.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="col-12 p-0">
-                            <img src="./assets/img/tools.jpg" alt="" class="img-fluid">
+                            <img src="<?php bloginfo( 'template_url' ); ?> ./assets/img/tools.jpg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -72,7 +68,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8 p-0">
-                    <img src="./assets/img/worker.jpg" alt="" class="img-fluid">
+                    <img src="<?php bloginfo( 'template_url' ); ?> ./assets/img/worker.jpg" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
